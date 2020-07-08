@@ -7,8 +7,8 @@ Thanks to the built in battery management and solar charging functionality of th
 ![dashboard](https://raw.githubusercontent.com/chrisys/mini-lora-weatherstation/main/assets/dashboard.png)
 
 ## Hardware required
-* Bosch BME280 breakout board
-* Heltec CubeCell HTCC-AB01
+* Bosch BME280 breakout board ([AliExpress](https://www.aliexpress.com/item/32849462236.html) - I chose these because the pinout exactly matches that of the dev board enabling you to solder it straight on)
+* Heltec CubeCell HTCC-AB01 ([AliExpress](https://www.aliexpress.com/item/4000200371092.html) - be sure to select the correct LoRa frequency for your country)
 * 3.7V LiPo cell (I'm using a 650mAh one) with a micro JST connector
 
 ## Other requirements
@@ -33,3 +33,11 @@ I used a Creality Ender 3 loaded with white PETG filament to print this case. Wo
 * M2 stainless steel machine screws (for securing the CubeCell board to the base)
 
 The holes in the top of the posts and in the upright stand for the CubeCell board on the base are tapping size for M4 and M2 respectively. This means that after it is printed you can run a standard tap into the hole and get some decent quality threads.
+
+## Assembly
+
+Once you've printed the parts they should fit together - tolerances should be large enough to cater for minor variations in prints but you may need to clean up the edges of the holes in the layers if your first layer is a bit squashed.
+
+![dashboard](https://raw.githubusercontent.com/chrisys/mini-lora-weatherstation/main/assets/parts.png)
+
+![dashboard](https://raw.githubusercontent.com/chrisys/mini-lora-weatherstation/main/assets/assembly.png)
