@@ -10,6 +10,7 @@ Thanks to the built in battery management and solar charging functionality of th
 * Bosch BME280 breakout board ([AliExpress](https://www.aliexpress.com/item/32849462236.html) - I chose these because the pinout exactly matches that of the dev board enabling you to solder it straight on)
 * Heltec CubeCell HTCC-AB01 ([AliExpress](https://www.aliexpress.com/item/4000200371092.html) - be sure to select the correct LoRa frequency for your country)
 * 3.7V LiPo cell (I'm using a 650mAh one) with a micro JST connector
+* **Optional:** 6V 110x60mm solar panel ([AliExpress](https://www.aliexpress.com/item/1851948.html))
 
 ## Other requirements
 * [Arduino IDE](https://www.arduino.cc/en/main/software)
@@ -27,6 +28,7 @@ I used a Creality Ender 3 loaded with white PETG filament to print this case. Wo
 * 6x Open layers (mini-lora-ws-openlayer.stl)
 * 1x Closed layer (mini-lora-ws-closedlayer.stl)
 * 1x Top layer (mini-lora-ws-top.stl)
+* **Optional:** 1x Solar panel bracket
 * M4 tap
 * M4 stainless steel machine screws (for securing the top layer)
 * M2 tap
@@ -38,6 +40,10 @@ The holes in the top of the posts and in the upright stand for the CubeCell boar
 
 Once you've printed the parts they should fit together - tolerances should be large enough to cater for minor variations in prints but you may need to clean up the edges of the holes in the layers if your first layer is a bit squashed.
 
-![dashboard](https://raw.githubusercontent.com/chrisys/mini-lora-weatherstation/main/assets/parts.png)
+![parts](https://raw.githubusercontent.com/chrisys/mini-lora-weatherstation/main/assets/parts.png)
 
-![dashboard](https://raw.githubusercontent.com/chrisys/mini-lora-weatherstation/main/assets/assembly.png)
+![assembly](https://raw.githubusercontent.com/chrisys/mini-lora-weatherstation/main/assets/assembly.png)
+
+If you're adding a solar panel that layer can be placed between the top layer and the bracket.
+
+![finished](https://raw.githubusercontent.com/chrisys/mini-lora-weatherstation/main/assets/finished.jpg)
