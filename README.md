@@ -20,6 +20,9 @@ Thanks to the built in battery management and solar charging functionality of th
 * A free Ubidots STEM account ([register here](https://ubidots.com/stem/))
 * You need to be in range of a TTN gateway ([here's a map](https://www.thethingsnetwork.org/map)) or have [built your own gateway](https://www.balena.io/blog/build-a-ttn-lora-gateway-with-balenafin-and-balenacloud/).
 
+## TTN configuration
+To decode the data on the TTN side, a custom payload format decoder function is required. This is included in `payload-decode.txt`. Simply paste the contents of this file into the `Decoder` input area under `Payload Formats` within the TTN console.
+
 ## For the case
 
 I used a Creality Ender 3 loaded with white PETG filament to print this case. Word has it that PETG is a good material to use for outdoor items that are going to be exposed to weather and UV. Time will tell.
