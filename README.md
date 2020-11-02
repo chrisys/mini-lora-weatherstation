@@ -23,6 +23,14 @@ Thanks to the built in battery management and solar charging functionality of th
 ## TTN configuration
 To decode the data on the TTN side, a custom payload format decoder function is required. This is included in `payload-decode.txt`. Simply paste the contents of this file into the `Decoder` input area under `Payload Formats` within the TTN console.
 
+## PlatformIO support (optional)
+
+Source code located in /src
+* main.cpp (same as Arduino Sketch)
+* ttnvalues.h (please update with your TTN console values)
+
+* platformio.ini (update __board_build.arduino.lorawan.*__ parameters according to your needs. Example defaults: EU868, Class A & OTAA activation mode)
+
 ## For the case
 
 I used a Creality Ender 3 loaded with white PETG filament to print this case. Word has it that PETG is a good material to use for outdoor items that are going to be exposed to weather and UV. Time will tell.
@@ -50,11 +58,3 @@ Once you've printed the parts they should fit together - tolerances should be la
 If you're adding a solar panel that layer can be placed between the top layer and the bracket.
 
 ![finished](https://raw.githubusercontent.com/chrisys/mini-lora-weatherstation/main/assets/finished.jpg)
-
-## PlatformIO support
-
-Added PlatformIO support.
-Source code located in /src
-                        + main.cpp (same as Arduino Sketch)
-                        + ttnvalues.h (please update with your TTN console values)
-                    + platformio.ini (Update board_build.arduino.lorawan.* parameters according to your needs. Example defaults: EU868, Class A & OTAA activation mode)
