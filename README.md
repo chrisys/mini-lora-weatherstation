@@ -50,3 +50,11 @@ Once you've printed the parts they should fit together - tolerances should be la
 If you're adding a solar panel that layer can be placed between the top layer and the bracket.
 
 ![finished](https://raw.githubusercontent.com/chrisys/mini-lora-weatherstation/main/assets/finished.jpg)
+
+## PlatformIO support
+
+Added PlatformIO support.
+Source code located in /src
+                        + main.cpp (same as Arduino Sketch)
+                        + ttnvalues.h (please update with your TTN console values)
+                    + platformio.ini (Update board_build.arduino.lorawan.* parameters according to your needs. Example defaults: EU868, Class A & OTAA activation mode)
