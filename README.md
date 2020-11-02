@@ -29,7 +29,9 @@ Source code located in /src
 * main.cpp (same as Arduino Sketch)
 * ttnvalues.h (please update with your TTN console values)
 
-* platformio.ini (update __board_build.arduino.lorawan.*__ parameters according to your needs. Example defaults: EU868, Class A & OTAA activation mode)
+* /platformio.ini (update __board_build.arduino.lorawan.*__ parameters according to your needs. Example defaults: EU868, Class A & OTAA activation mode)
+
+[ASR605x LoRaWAN configuration parameters](https://docs.platformio.org/en/latest/platforms/asrmicro650x.html#configuration)  
 
 ## For the case
 
