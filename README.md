@@ -25,6 +25,16 @@ Thanks to the built in battery management and solar charging functionality of th
 ## TTN configuration
 To decode the data on the TTN side, a custom payload format decoder function is required. This is included in `payload-decode.txt`. Simply paste the contents of this file into the `Decoder` input area under `Payload Formats` within the TTN console.
 
+## PlatformIO support (optional)
+
+Source code located in /src
+* main.cpp (same as Arduino Sketch)
+* ttnvalues.h (please update with your TTN console values)
+
+* /platformio.ini (update __board_build.arduino.lorawan.*__ parameters according to your needs. Example defaults: EU868, Class A & OTAA activation mode)
+
+[ASR605x LoRaWAN configuration parameters](https://docs.platformio.org/en/latest/platforms/asrmicro650x.html#configuration)  
+
 ## For the case
 
 I used a Creality Ender 3 loaded with white PETG filament to print this case. Word has it that PETG is a good material to use for outdoor items that are going to be exposed to weather and UV. Time will tell.
