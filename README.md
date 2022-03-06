@@ -6,6 +6,17 @@ Thanks to the built in battery management and solar charging functionality of th
 
 ![dashboard](https://raw.githubusercontent.com/chrisys/mini-lora-weatherstation/main/assets/dashboard.png)
 
+## Project based on PlatformIO
+
+Source code located in **/src** folder
+* main.cpp (same as Arduino Sketch)
+* ttnvalues.h (update keys with your according TTN console values)
+* /platformio.ini (update __board_build.arduino.lorawan.*__ parameters according to your needs)
+
+Example defaults are: EU868, Class A & OTAA activation mode
+
+[ASR605x LoRaWAN configuration parameters](https://docs.platformio.org/en/latest/platforms/asrmicro650x.html#configuration)  
+
 ## Hardware required
 * Bosch BME280 breakout board ([AliExpress](https://www.aliexpress.com/item/32849462236.html) - I chose these because the pinout exactly matches that of the dev board enabling you to solder it straight on)
 * Heltec CubeCell HTCC-AB01 ([AliExpress](https://www.aliexpress.com/item/4000200371092.html) - be sure to select the correct LoRa frequency for your country)
@@ -22,16 +33,6 @@ Thanks to the built in battery management and solar charging functionality of th
 
 ## TTN configuration
 To decode the data on the TTN side, a custom payload format decoder function is required. This is included in `payload-decode.txt`. Simply paste the contents of this file into the `Decoder` input area under `Payload Formats` within the TTN console.
-
-## PlatformIO support (optional)
-
-Source code located in /src
-* main.cpp (same as Arduino Sketch)
-* ttnvalues.h (please update with your TTN console values)
-
-* /platformio.ini (update __board_build.arduino.lorawan.*__ parameters according to your needs. Example defaults: EU868, Class A & OTAA activation mode)
-
-[ASR605x LoRaWAN configuration parameters](https://docs.platformio.org/en/latest/platforms/asrmicro650x.html#configuration)  
 
 ## For the case
 
